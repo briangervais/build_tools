@@ -1,14 +1,14 @@
 {
-  "name": "randomizr",
+  "name": "build_tools",
   "version": "1.0.0",
-  "description": "Randomizr Project",
+  "description": "Basic Build Tools",
   "main": "../main.js",
   "scripts": {
     "test": "Test",
-    "build-css": "node-sass --include-path scss src/scss/randomizr.scss build/main.css",
+    "build-css": "node-sass --include-path scss src/scss/main.scss build/main.css",
     "watch-sass": "nodemon -e scss -x \"npm run build-css\"",
-    "build-js": "browserify src/js/random_hsla.js -o build/main.js",
-    "watch-js": "nodemon -e js --watch src/js/random_hsla.js -x \"npm run build-js\"",
+    "build-js": "browserify src/js/main.js -o build/main.js",
+    "watch-js": "nodemon -e js --watch src/js -x \"npm run build-js\"",
     "watch": "npm run watch-js & npm run watch-sass"
   },
   "repository": {
